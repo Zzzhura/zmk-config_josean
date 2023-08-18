@@ -21,20 +21,79 @@
           }; 
         };
 
-    macros {
-        test_it: test_it  {
-            label = "test_it";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp GRAVE >
-                , <&macro_release &kp RALT>
-                , <&macro_tap &kp A >
-                ;
+        macros {
+            a_gr: a_gr {
+                label = "a_gr";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RALT>
+                    , <&macro_tap &kp GRAVE >
+                    , <&macro_release &kp RALT>
+                    , <&macro_tap &kp A >
+                    ;
+            };
+              
+            e_gr: e_gr {
+                label = "e_gr";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RALT>
+                    , <&macro_tap &kp GRAVE >
+                    , <&macro_release &kp RALT>
+                    , <&macro_tap &kp E >
+                    ;
+            };
+              
+            i_gr: i_gr {
+                label = "i_gr";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RALT>
+                    , <&macro_tap &kp GRAVE >
+                    , <&macro_release &kp RALT>
+                    , <&macro_tap &kp I >
+                    ;
+            };
+              
+            o_gr: o_gr {
+                label = "o_gr";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RALT>
+                    , <&macro_tap &kp GRAVE >
+                    , <&macro_release &kp RALT>
+                    , <&macro_tap &kp O >
+                    ;
+            };
+              
+            u_gr: u_gr {
+                label = "u_gr";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RALT>
+                    , <&macro_tap &kp GRAVE >
+                    , <&macro_release &kp RALT>
+                    , <&macro_tap &kp U >
+                    ;
+            };
+
+            e_ac: e_ac {
+                label = "e_ac";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp RALT>
+                    , <&macro_tap &kp E >
+                    , <&macro_release &kp RALT>
+                    , <&macro_tap &kp E >
+                    ;
+            };
         };
-    };
-  
 
         keymap {
                 compatible = "zmk,keymap";
@@ -74,7 +133,7 @@
 // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |            |     |     |     |     |     |     |
 //                    |     |     |    |                  |     |     |     |
                         bindings = <
-   &test_it     &kp F1        &kp F2       &kp F3       &kp F4       &kp F5          &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &trans
+   &e_ac     &kp F1        &kp F2       &kp F3       &kp F4       &kp F5          &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &trans
    &trans     &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans   &trans   &trans &trans    &trans &trans
                           	                        &trans   &trans   &trans       &trans   &trans   &trans
