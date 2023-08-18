@@ -30,7 +30,7 @@
                 = <&macro_press &kp RALT>
                 , <&macro_tap &kp GRAVE >
                 , <&macro_release &kp RALT>
-                , <&macro_tap &kp a >
+                , <&macro_tap &kp A >
                 ;
         };
     };
