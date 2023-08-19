@@ -84,20 +84,6 @@
               , <&macro_tap &kp E >
               ;
       };
-
-      ctrl_esc: ctrl_esc {
-          label = "ctrl_esc";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <&tp LCTRL ESC>;
-      };
-
-      alt_ret: alt_ret {
-          label = "alt_ret";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <&tp LALT RET>;
-      };
         
   };
 };

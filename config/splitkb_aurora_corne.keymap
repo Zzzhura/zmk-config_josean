@@ -26,7 +26,7 @@
  &kp TAB    &kp Q    &kp W     &kp E     &kp R      &kp T          &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
  &tp LCTRL ESC &kp A &kp S     &kp D     &kp F      &kp G          &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
  &kp LSHFT  &kp Z    &kp X     &kp C     &kp V      &kp B          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT 
-                               &kp LGUI  &mo 1      &alt_ret       &kp SPACE &mo 2     &kp RALT
+                               &kp LGUI  &mo 1      &tp LALT RET   &kp SPACE &mo 2     &kp RALT
                         >;
                 };
                   
@@ -41,36 +41,23 @@
   &trans    &kp EXCL &kp AT    &kp HASH  &kp DLLR &kp PRCNT       &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
   &trans    &kp N1   &kp N2    &kp N3    &kp N4   &kp N5          &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
   &kp LSHFT &kp N6   &kp N7    &kp N8    &kp N9   &kp N0          &kp UNDER  &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp RSHFT
-                               &kp LGUI  &trans   &alt_ret        &kp SPACE  &kp BSPC  &trans
+                               &kp LGUI  &trans   &tp LALT RET    &kp SPACE  &kp BSPC  &trans
                         >;
                 };
-//                layer_above {
-//// -----------------------------------------------------------------------------------------
-//// |       |  F1  |  F2  |  F3   |  F4   |  F5 |            |  F6  |  F7  |  F8  |  F9  |  F10  |   |
-//// |       | Prev | Next | Vol - | Vol + | Play/Pause |   |      | LFT | DWN |  UP | RGT |     |     |
-//// | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |            |     |     |     |     |     |     |
-////                    |     |     |    |                  |     |     |     |
-//                        bindings = <
-//   &trans     &kp F1        &kp F2       &kp F3       &kp F4       &kp F5          &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &trans
-//   &trans     &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-//   &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans   &trans   &trans &trans    &trans &trans
-//                          	                        &trans   &trans   &trans       &trans   &trans   &trans
-//                        >;
-//                };
 
 
 //---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
-//                        è         é        bt1     bt2            btClr       ù         ì         ò       vol up     bksp
-//   f1        à         f2        f3        f4      f5               ←         ↓         ↑         →       vol dn    
-//             f6        f7        f8        f9      f10           play/pause  prev     next                vol mut    
+//                                  è         é                                 ù         ì         ò       vol up     bksp
+//   f1        à         f2        f3        f4      f5               ←         ↓         ↑         →       vol dn     bt1
+//             f6        f7        f8        f9      f10           play/pause  prev     next                vol mut    bt2
 //                             
 //                             +---------+---------+---------+    +---------+---------+---------+
                    layer_above {
                           bindings = <
-    &trans   &trans    &e_gr     &e_ac   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_CLR &u_gr      &i_gr     &o_gr     &kp C_VOL_UP &kp BSPC
-    &kp F1   &a_gr     &kp F2    &kp F3  &kp F4        &kp F5       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT &kp C_VOL_DN &trans     
-    &trans   &kp F6    &kp F7    &kp F8  &kp F9        &kp F10      &kp C_PP   &kp C_PREV &kp C_NEXT&trans    &kp C_MUTE   &trans     
-                                 &trans  &trans        &trans       &trans     &trans     &trans
+    &trans   &trans    &trans    &e_gr   &e_ac      &trans        &trans     &u_gr      &i_gr     &o_gr     &kp C_VOL_UP &kp BSPC
+    &kp F1   &a_gr     &kp F2    &kp F3  &kp F4     &kp F5        &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT &kp C_VOL_DN &bt BT_SEL 0  
+    &trans   &kp F6    &kp F7    &kp F8  &kp F9     &kp F10       &kp C_PP   &kp C_PREV &kp C_NEXT&trans    &kp C_MUTE   &bt BT_SEL 1
+                                 &trans  &trans     &trans        &trans     &trans     &trans
                           >;
                   };
 ///                layer_above {
