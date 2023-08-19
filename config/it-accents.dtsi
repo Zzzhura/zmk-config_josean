@@ -12,6 +12,7 @@
     };
 
     macros {
+        
       a_gr: a_gr {
           label = "a_gr";
           compatible = "zmk,behavior-macro";
@@ -83,5 +84,6 @@
               , <&macro_tap &kp E >
               ;
       };
+        
   };
 };
