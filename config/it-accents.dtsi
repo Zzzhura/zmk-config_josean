@@ -1,4 +1,5 @@
 / {
+
     behaviors {
       tp: tap_preferred {
         compatible = "zmk,behavior-hold-tap";
@@ -83,6 +84,13 @@
               , <&macro_release &kp RALT>
               , <&macro_tap &kp E >
               ;
+      };
+
+      ctrl_esc: ctrl_esc {
+          label = "ctrl_esc";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&tp LCTRL ESC>;
       };
         
   };
