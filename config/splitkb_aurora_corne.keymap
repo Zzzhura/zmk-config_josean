@@ -44,7 +44,6 @@
                                &kp LGUI  &trans   &alt_ret        &kp SPACE  &kp BSPC  &trans
                         >;
                 };
-
 //                layer_above {
 //// -----------------------------------------------------------------------------------------
 //// |       |  F1  |  F2  |  F3   |  F4   |  F5 |            |  F6  |  F7  |  F8  |  F9  |  F10  |   |
@@ -67,7 +66,7 @@
 //                             +---------+---------+---------+    +---------+---------+---------+
                  layer_above {
                         bindings = <
-  &trans   &trans    &e_gr     &trans   &bt BT_SEL_0  &bt BT_SEL_1 &bt BT_CLR &u_gr     &i_gr     &o_g r    &trans    &kp BSPC
+  &trans   &trans    &trans     &trans   &bt BT_SEL_0  &bt BT_SEL_1 &bt BT_CLR &trans     &trans     &trans r    &trans    &kp BSPC
   &kp F1   &a_gr     &kp F2    &kp F3  &kp F4        &kp F5       &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT &trans    &trans     
   &trans   &kp F6    &kp F7    &kp F8  &kp F9        &kp F10      &kp C_PP   &trans    &trans    &trans    &trans    &trans     
                                &trans  &trans        &trans       &trans     &trans    &trans

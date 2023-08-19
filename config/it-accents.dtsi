@@ -25,53 +25,53 @@
               ;
       };
         
-      e_gr: e_gr {
-          label = "e_gr";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              = <&macro_press &kp RALT>
-              , <&macro_tap &kp GRAVE >
-              , <&macro_release &kp RALT>
-              , <&macro_tap &kp E >
-              ;
-      };
-        
-      i_gr: i_gr {
-          label = "i_gr";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              = <&macro_press &kp RALT>
-              , <&macro_tap &kp GRAVE >
-              , <&macro_release &kp RALT>
-              , <&macro_tap &kp I >
-              ;
-      };
-        
-      o_gr: o_gr {
-          label = "o_gr";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              = <&macro_press &kp RALT>
-              , <&macro_tap &kp GRAVE >
-              , <&macro_release &kp RALT>
-              , <&macro_tap &kp O >
-              ;
-      };
-        
-      u_gr: u_gr {
-          label = "u_gr";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              = <&macro_press &kp RALT>
-              , <&macro_tap &kp GRAVE >
-              , <&macro_release &kp RALT>
-              , <&macro_tap &kp U >
-              ;
-      };
+//      e_gr: e_gr {
+//          label = "e_gr";
+//          compatible = "zmk,behavior-macro";
+//          #binding-cells = <0>;
+//          bindings
+//              = <&macro_press &kp RALT>
+//              , <&macro_tap &kp GRAVE >
+//              , <&macro_release &kp RALT>
+//              , <&macro_tap &kp E >
+//              ;
+//      };
+//        
+//      i_gr: i_gr {
+//          label = "i_gr";
+//          compatible = "zmk,behavior-macro";
+//          #binding-cells = <0>;
+//          bindings
+//              = <&macro_press &kp RALT>
+//              , <&macro_tap &kp GRAVE >
+//              , <&macro_release &kp RALT>
+//              , <&macro_tap &kp I >
+//              ;
+//      };
+//        
+//      o_gr: o_gr {
+//          label = "o_gr";
+//          compatible = "zmk,behavior-macro";
+//          #binding-cells = <0>;
+//          bindings
+//              = <&macro_press &kp RALT>
+//              , <&macro_tap &kp GRAVE >
+//              , <&macro_release &kp RALT>
+//              , <&macro_tap &kp O >
+//              ;
+//      };
+//        
+//      u_gr: u_gr {
+//          label = "u_gr";
+//          compatible = "zmk,behavior-macro";
+//          #binding-cells = <0>;
+//          bindings
+//              = <&macro_press &kp RALT>
+//              , <&macro_tap &kp GRAVE >
+//              , <&macro_release &kp RALT>
+//              , <&macro_tap &kp U >
+//              ;
+//      };
 
  //     e_ac: e_ac {
  //         label = "e_ac";
