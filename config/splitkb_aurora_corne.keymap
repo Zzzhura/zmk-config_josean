@@ -15,13 +15,13 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
 //---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
 //   tab        q        w         e         r         t               y         u         i         o         p        bksp
 // ctrl/esc     a        s         d         f         g               h         j         k         l        ; :        ' 
 //  rshift      z        x         c         v         b               n         m        , <       . >       / ?      lshift
 //                                cmd     lay_down  lalt/enter       space     lay_up     ralt
 //                             +---------+---------+---------+    +---------+---------+---------+
+                default_layer {
                         bindings = <  
  &kp TAB    &kp Q    &kp W     &kp E     &kp R      &kp T          &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
  &ctrl_esc  &kp A    &kp S     &kp D     &kp F      &kp G          &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
@@ -30,13 +30,13 @@
                         >;
                 };
                   
-                layer_below {
 //---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
-//              !        @         #         $         t               ^         &         *         (         )          \
-//              1        2         3         4         g               -         =         `         [         ]          |
-//  rshift      6        7         8         9         b               _         +         ~         {         }       lshift
+//              !        @         #         $         %               ^         &         *         (         )          \
+//              1        2         3         4         5               -         =         `         [         ]          |
+//  rshift      6        7         8         9         0               _         +         ~         {         }       lshift
 //                                cmd               lalt/enter       space      bksp     
 //                             +---------+---------+---------+    +---------+---------+---------+
+                layer_below {
                         bindings = <
   &trans    &kp EXCL &kp AT    &kp HASH  &kp DLLR &kp PRCNT       &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
   &trans    &kp N1   &kp N2    &kp N3    &kp N4   &kp N5          &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
@@ -44,11 +44,6 @@
                                &kp LGUI  &trans   &alt_ret        &kp SPACE  &kp BSPC  &trans
                         >;
                 };
-// -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |    %     |   |  ^  |  &  |  *  |  (  |  )  |   \   |
-// |      |  1  |  2  |  3  |  4  |    5     |   |  -  |  =  |  `  |  [  |  ]  |  "|"  |
-// | SHFT |  6  |  7  |  8  |  9  |    0     |   |  _  |  +  |  ~  |  {  |  }  | RSHFT |
-//                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
 //                layer_above {
 //// -----------------------------------------------------------------------------------------
@@ -64,17 +59,23 @@
 //                        >;
 //                };
 
-                 layer_above {
 // // -----------------------------------------------------------------------------------------
 // // |      |  è  |  é  |     |     |     |   |     |     |     |  ù  |  ì  |  ò   |
-// // |  à   |     |     |     |     |     |   |     |     | LFT | DWN |  UP | RGT |     |     |
+// // |     |     |     |     |     |     |   |     |     | LFT | DWN |  UP | RGT |     |     |
 // // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 // //                    |     |     |     |   |     |     |     |
+//---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
+//              
+//              à
+// 
+//    
+//                             +---------+---------+---------+    +---------+---------+---------+
+                 layer_above {
                         bindings = <
-   &trans     &kp F1        &kp F2       &kp F3       &kp F4       &kp F5          &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &trans
-   &trans     &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans   &trans   &trans &trans    &trans &trans
-                          	                        &trans   &trans   &trans       &trans   &trans   &trans
+  &trans   &trans    &trans    &trans    &trans    &trans          &trans    &trans    &trans    &trans    &trans    &trans     
+  &trans   &trans    &trans    &trans    &trans    &trans          &trans    &trans    &trans    &trans    &trans    &trans     
+  &trans   &trans    &trans    &trans    &trans    &trans          &trans    &trans    &trans    &trans    &trans    &trans     
+                               &trans    &trans    &trans          &trans    &trans    &trans
                         >;
                 };
   
