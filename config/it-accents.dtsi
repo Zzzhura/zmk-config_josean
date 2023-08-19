@@ -73,17 +73,17 @@
               ;
       };
 
- //     e_ac: e_ac {
- //         label = "e_ac";
- //         compatible = "zmk,behavior-macro";
- //         #binding-cells = <0>;
- //         bindings
- //             = <&macro_press &kp RALT>
- //             , <&macro_tap &kp E >
- //             , <&macro_release &kp RALT>
- //             , <&macro_tap &kp E >
- //             ;
- //     };
+      e_ac: e_ac {
+          label = "e_ac";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp RALT>
+              , <&macro_tap &kp E >
+              , <&macro_release &kp RALT>
+              , <&macro_tap &kp E >
+              ;
+      };
 
       ctrl_esc: ctrl_esc {
           label = "ctrl_esc";
