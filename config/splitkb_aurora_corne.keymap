@@ -10,8 +10,6 @@
 
 #include "it-accents.dtsi"
 
-#define CTRL_ESC ZMK_MACRO(bindings = <&tp LCTRL ESC>;)
-
 / {
 
         keymap {
@@ -25,11 +23,12 @@
 //                    | GUI | LWR | ALT/RET     |   | SPACE | RSE  | ALT |
                         bindings = <  
 //---------+---------+---------+---------+---------+---------+     ---------+---------+---------+---------+---------+---------+     
-// tab      q         w         e         r         t
-// ctrl/esc a         s         d         f         g
-// shift    z         x         c         v         b
+//   tab        q        w         e         r         t
+// ctrl/esc     a        s         d         f         g
+//   shift      z        x         c         v         b
+//                                cmd     lay_down  alt/enter
  &kp TAB    &kp Q    &kp W     &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P &kp BSPC
- &CTRL_ESC  &kp A    &kp S     &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &tp LC(LS(LALT)) SQT
+ &ctrl_esc  &kp A    &kp S     &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &tp LC(LS(LALT)) SQT
  &kp LSHFT  &kp Z    &kp X     &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT 
             &kp LGUI &mo 1     &tp LALT RET       &kp SPACE &mo 2 &kp RALT
                         >;
