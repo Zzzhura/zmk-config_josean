@@ -1,5 +1,4 @@
 / {
-
     behaviors {
       tp: tap_preferred {
         compatible = "zmk,behavior-hold-tap";
@@ -91,6 +90,13 @@
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings = <&tp LCTRL ESC>;
+      };
+
+      alt_ret: alt_ret {
+          label = "alt_ret";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&tp LALT RET>;
       };
         
   };
