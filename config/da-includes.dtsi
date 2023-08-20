@@ -85,5 +85,27 @@
               ;
       };
         
+      mac_exp: mac_exp {
+          label = "mac_exp";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp LCTRL>
+              , <&macro_tap &kp DOWN>
+              , <&macro_release &kp LCTRL>
+              ;
+      };
+
+      mac_mc: mac_mc {
+          label = "mac_mc";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp LCTRL>
+              , <&macro_tap &kp UP>
+              , <&macro_release &kp LCTRL>
+              ;
+      };
+
   };
 };
