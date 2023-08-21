@@ -18,14 +18,14 @@
            tapping-term-ms = <200>;
            bindings = <&mo 1>, <&kp LGUI &kp RET>;
        };
-//
-//    td_shft_caps: td_shft_caps{
-//           compatible = "zmk,behavior-tap-dance";
-//           label = "td_shft_caps";
-//           #binding-cells = <0>;
-//           tapping-term-ms = <200>;
-//           bindings = <&kp RSHFT>, <&kp CAPS>;
-//       };
+
+    td_shft_caps: td_shft_caps{
+           compatible = "zmk,behavior-tap-dance";
+           label = "td_shft_caps";
+           #binding-cells = <0>;
+           tapping-term-ms = <200>;
+           bindings = <&kp RSHFT>, <&kp CAPS>;
+       };
 
     };
 
