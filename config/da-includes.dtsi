@@ -1,5 +1,6 @@
 / {
     behaviors {
+
       tp: tap_preferred {
         compatible = "zmk,behavior-hold-tap";
         label = "TAP_PREFERRED";
@@ -9,6 +10,23 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
       }; 
+    
+//    td_mo1_cmdret: td_mo1_cmdret{
+//           compatible = "zmk,behavior-tap-dance";
+//           label = "td_mo1_cmdret";
+//           #binding-cells = <0>;
+//           tapping-term-ms = <200>;
+//           bindings = <&mo 2>, <&kp LGUI &kp RET>;
+//       };
+//
+//    td_shft_caps: td_shft_caps{
+//           compatible = "zmk,behavior-tap-dance";
+//           label = "td_shft_caps";
+//           #binding-cells = <0>;
+//           tapping-term-ms = <200>;
+//           bindings = <&kp RSHFT>, <&kp CAPS>;
+//       };
+
     };
 
     macros {
