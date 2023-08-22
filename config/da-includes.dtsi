@@ -24,7 +24,8 @@
            label = "td_shft_caps";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp RSHFT>, <&kp CAPS>;
+           //bindings = <&kp RSHFT>, <&kp CAPS>;
+           bindings = <&kp N1>, <&kp N2>, <&kp N3>;
        };
 
     };
