@@ -108,6 +108,17 @@
               , <&macro_release &kp LCTRL>
               ;
       };
+      
+      mac_exp_clear: mac_exp_clear {
+          label = "mac_exp_clea";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp LGUI>
+              , <&macro_tap &kp F3>
+              , <&macro_release &kp LGUI>
+              ;
+      };
 
   };
 };
