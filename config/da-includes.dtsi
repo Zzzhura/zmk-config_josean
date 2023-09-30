@@ -111,7 +111,7 @@
 
       // Show desktop
       mac_dt: mac_dt {
-          label = "mac_";
+          label = "mac_dt";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
