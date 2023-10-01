@@ -36,6 +36,8 @@
 //  rshift      6        7         8         9         0               _         +         ~         {         }       lshift
 //                                cmd               lalt/enter       space      bksp     
 //                             +---------+---------+---------+    +---------+---------+---------+
+// In this layer f3 is repeated. It is also present, with all oter function keys, in the next layer, because f3 and Cmd+f3 are
+// associated to macos shortcuts to exposé and clear the destkop.
                 layer_below {
                         bindings = <
   &kp BSLH  &kp EXCL &kp AT    &kp HASH  &kp DLLR &kp PRCNT       &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
