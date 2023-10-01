@@ -109,17 +109,5 @@
               ;
       };
 
-      // Show desktop
-      mac_dt: mac_dt {
-          label = "mac_dt";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              = <&macro_press &kp LGUI>
-              , <&macro_tap &kp F2>
-              , <&macro_release &kp LGUI>
-              ;
-      };
-      
   };
 };
