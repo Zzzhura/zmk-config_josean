@@ -102,7 +102,6 @@
           bindings
               = <&macro_tap &kp COLON>
               , <&macro_tap &kp W >
-              , <&macro_tap &kp Q >
               , <&macro_tap &kp RET >
               ;
       };
