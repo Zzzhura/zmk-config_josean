@@ -16,7 +16,7 @@
            label = "TAP_DANCE_VIM_SAVE";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp LSHIFT>, <&a_gr>;
+           bindings = <&kp RSHIFT>, <&vimsave>;
       };
 
     };
@@ -92,6 +92,17 @@
               , <&macro_tap &kp E >
               , <&macro_release &kp RALT>
               , <&macro_tap &kp E >
+              ;
+      };
+        
+      vimsave: vimsave {
+          label = "vimsave";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp COLON>
+              , <&macro_press &kp W >
+              , <&macro_press &kp Q >
               ;
       };
         
