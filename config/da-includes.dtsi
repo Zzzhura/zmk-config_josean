@@ -16,7 +16,7 @@
            label = "TAP_DANCE_VIM_SAVE";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp LSHIFT>, <&kp COLON &kp W &kp Q &kp RET>;
+           bindings = <&kp LSHIFT>, <&a_gr>;
       };
 
     };
