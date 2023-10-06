@@ -10,6 +10,14 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
       }; 
+      
+      tdvimsave: tap_dance_vim_save {
+           compatible = "zmk,behavior-tap-dance";
+           label = "TAP_DANCE_VIM_SAVE";
+           #binding-cells = <0>;
+           tapping-term-ms = <200>;
+           bindings = <&kp LSHIFT>, <&kp COLON &kp W &kp Q &kp RET>;
+      };
 
     };
 
