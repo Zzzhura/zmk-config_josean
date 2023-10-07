@@ -19,7 +19,7 @@
 //   tab        q        w         e         r         t                 y         u         i         o         p        bksp
 // ctrl/esc     a        s         d         f         g                 h         j         k         l        ; :        ' 
 //  rshift      z        x         c         v         b                 n         m        , <       . >       / ?      lshift
-//                                cmd     lay_down  lalt/enter         space     lay_up hyper/ralt
+//                                cmd     lay_down  lalt/enter         space     lay_up     ralt
 //                             +---------+---------+---------+      +---------+---------+---------+
                 default_layer {
                         bindings = <  
