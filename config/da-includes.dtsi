@@ -11,12 +11,12 @@
         bindings = <&kp>, <&kp>;
       }; 
       
-      tdvimsave: tap_dance_vim_save {
+      tdvsave: tap_dance_vim_save {
            compatible = "zmk,behavior-tap-dance";
            label = "TAP_DANCE_VIM_SAVE";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp RSHIFT>, <&vimsave>;
+           bindings = <&kp RSHIFT>, <&vsave> <&vtcomp>;
       };
 
     };
@@ -93,16 +93,43 @@
               , <&macro_release &kp RALT>
               , <&macro_tap &kp E >
               ;
-      };
+      } <&vtcomp>;
         
-      vimsave: vimsave {
-          label = "vimsave";
+      vsave: vsave {
+          label = "vsave";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
-              = <&macro_tap &kp COLON>
+              = <&macro_tap &kp ESC>
+              , <&macro_tap &kp COLON>
               , <&macro_tap &kp W >
               , <&macro_tap &kp RET >
+              ;
+      };
+        
+      vtcomp: vim_tex_compile {
+          label = "vim_tex_compile";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp ESC>
+              , <&macro_tap &kp COLON>
+              , <&macro_tap &kp W >
+              , <&macro_tap &kp RET >
+              , <&macro_tap &kp SPACE>
+              , <&macro_tap &kp L>
+              , <&macro_tap &kp L>
+              ;
+      };
+
+      vtview: vim_tex_view {
+          label = "vim_tex_view";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              , <&macro_tap &kp SPACE>
+              , <&macro_tap &kp L>
+              , <&macro_tap &kp V>
               ;
       };
         
