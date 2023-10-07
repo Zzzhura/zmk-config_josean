@@ -95,8 +95,8 @@
               ;
       } <&vtcomp>;
         
-      vsave: vsave {
-          label = "vsave";
+      vsave: vim_save {
+          label = "vim_save";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
@@ -122,16 +122,16 @@
               ;
       };
 
-      vtview: vim_tex_view {
-          label = "vim_tex_view";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              , <&macro_tap &kp SPACE>
-              , <&macro_tap &kp L>
-              , <&macro_tap &kp V>
-              ;
-      };
+//      vtview: vim_tex_view {
+//          label = "vim_tex_view";
+//          compatible = "zmk,behavior-macro";
+//          #binding-cells = <0>;
+//          bindings
+//              , <&macro_tap &kp SPACE>
+//              , <&macro_tap &kp L>
+//              , <&macro_tap &kp V>
+//              ;
+//      };
         
   };
 };
