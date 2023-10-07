@@ -18,7 +18,7 @@
 //---------+---------+---------+---------+---------+---------+      +---------+---------+---------+---------+---------+---------+     
 //   tab        q        w         e         r         t                 y         u         i         o         p        bksp
 // ctrl/esc     a        s         d         f         g                 h         j         k         l        ; :        ' 
-//  rshift      z        x         c         v         b                 n         m        , <       . >       / ?      lshift
+//  lshift      z        x         c         v         b                 n         m        , <       . >       / ?      rshift 
 //                                cmd     lay_down  lalt/enter         space     lay_up     ralt
 //                             +---------+---------+---------+      +---------+---------+---------+
                 default_layer {
@@ -33,7 +33,7 @@
 //---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
 //    \         !        @         #         $         %               ^         &         *         (         )         bksp
 //   f3         1        2         3         4         5               -         +         `         [         ]          |
-//  rshift      6        7         8         9         0               _         =         ~         {         }       lshift
+//  lshift      6        7         8         9         0               _         =         ~         {         }       rshift
 //                                cmd               lalt/enter       space      bksp     
 //                             +---------+---------+---------+    +---------+---------+---------+
 // In this layer f3 is repeated. It is also present, with all oter function keys, in the next layer, because f3 and Cmd+f3 are
