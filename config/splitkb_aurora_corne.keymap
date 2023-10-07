@@ -12,32 +12,19 @@
 
 / {
 
-        keymap {
-                compatible = "zmk,keymap";
+   keymap {
 
-//---------+---------+---------+---------+---------+---------+      +---------+---------+---------+---------+---------+---------+     
-//   tab        q        w         e         r         t                 y         u         i         o         p        bksp
-// ctrl/esc     a        s         d         f         g                 h         j         k         l        ; :        ' 
-//  lshift      z        x         c         v         b                 n         m        , <       . >       / ?      rshift 
-//                                cmd     lay_down  lalt/enter         space     lay_up     ralt
-//                             +---------+---------+---------+      +---------+---------+---------+
-                default_layer {
-                        bindings = <  
- &kp TAB    &kp Q    &kp W     &kp E     &kp R      &kp T            &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
- &tp LCTRL ESC &kp A &kp S     &kp D     &kp F      &kp G            &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
- &kp LSHFT  &kp Z    &kp X     &kp C     &kp V      &kp B            &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &tdvsave
-                               &kp LGUI  &mo 1      &tp LALT RET     &mt HYPER SPACE &mo 2     &kp RALT
-                        >;
-                };
+     compatible = "zmk,keymap";
+
+       default_layer {
+         bindings = <  
+           &kp TAB         &kp Q   &kp W   &kp E       &kp R   &kp T          &kp Y             &kp U   &kp I       &kp O     &kp P      &kp BSPC
+           &tp LCTRL ESC   &kp A   &kp S   &kp D       &kp F   &kp G          &kp H             &kp J   &kp K       &kp L     &kp SEMI   &kp SQT
+           &kp LSHFT       &kp Z   &kp X   &kp C       &kp V   &kp B          &kp N             &kp M   &kp COMMA   &kp DOT   &kp FSLH   &tdvsave
+                                           &kp LGUI    &mo 1   &tp LALT RET   &mt HYPER SPACE   &mo 2   &kp RALT
+         >;
+       };
               
-//---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
-//    \         !        @         #         $         %               ^         &         *         (         )         bksp
-//   f3         1        2         3         4         5               -         +         `         [         ]          |
-//  lshift      6        7         8         9         0               _         =         ~         {         }       rshift
-//                                cmd               lalt/enter       space      bksp     
-//                             +---------+---------+---------+    +---------+---------+---------+
-// In this layer f3 is repeated. It is also present, with all oter function keys, in the next layer, because f3 and Cmd+f3 are
-// associated to macos shortcuts to exposé and clear the destkop.
                 layer_below {
                         bindings = <
   &kp BSLH  &kp EXCL &kp AT    &kp HASH  &kp DLLR &kp PRCNT       &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
