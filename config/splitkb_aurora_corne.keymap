@@ -32,8 +32,8 @@
               
 //---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
 //    \         !        @         #         $         %               ^         &         *         (         )         bksp
-//   f3         1        2         3         4         5               -         =         `         [         ]          |
-//  rshift      6        7         8         9         0               _         +         ~         {         }       lshift
+//   f3         1        2         3         4         5               -         +         `         [         ]          |
+//  rshift      6        7         8         9         0               _         =         ~         {         }       lshift
 //                                cmd               lalt/enter       space      bksp     
 //                             +---------+---------+---------+    +---------+---------+---------+
 // In this layer f3 is repeated. It is also present, with all oter function keys, in the next layer, because f3 and Cmd+f3 are
@@ -41,8 +41,8 @@
                 layer_below {
                         bindings = <
   &kp BSLH  &kp EXCL &kp AT    &kp HASH  &kp DLLR &kp PRCNT       &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-  &kp F3    &kp N1   &kp N2    &kp N3    &kp N4   &kp N5          &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
-  &kp LSHFT &kp N6   &kp N7    &kp N8    &kp N9   &kp N0          &kp UNDER  &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp RSHFT
+  &kp F3    &kp N1   &kp N2    &kp N3    &kp N4   &kp N5          &kp MINUS  &kp PLUS  &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
+  &kp LSHFT &kp N6   &kp N7    &kp N8    &kp N9   &kp N0          &kp UNDER  &kp EQUAL &kp TILDE       &kp LBRC &kp RBRC &kp RSHFT
                                &kp LGUI  &trans   &tp LALT RET    &kp SPACE  &kp BSPC  &trans
                         >;
                 };
