@@ -11,12 +11,12 @@
         bindings = <&kp>, <&kp>;
       }; 
       
-      tdvimsave: tap_dance_vim_save {
+      tdvsave: tap_dance_vim_save {
            compatible = "zmk,behavior-tap-dance";
            label = "TAP_DANCE_VIM_SAVE";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp RSHIFT>, <&vsave>;
+           bindings = <&kp RSHIFT>, <&vsave>, <&vtcompile>;
       };
 
     };
@@ -104,6 +104,21 @@
               , <&macro_tap &kp COLON>
               , <&macro_tap &kp W >
               , <&macro_tap &kp RET >
+              ;
+      };
+
+      vtcompile: vim_tex_compile {
+          label = "vim_tex_compile";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp ESC>
+              , <&macro_tap &kp COLON>
+              , <&macro_tap &kp W >
+              , <&macro_tap &kp RET >
+              , <&macro_tap &kp BSLH >
+              , <&macro_tap &kp L >
+              , <&macro_tap &kp L >
               ;
       };
         
