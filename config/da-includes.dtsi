@@ -113,14 +113,13 @@
           #binding-cells = <0>;
           bindings
               = 
-              //  <&macro_tap &kp ESC>
-              //, <&macro_tap &kp COLON>
-              //, <&macro_tap &kp W >
-              //, <&macro_tap &kp RET >
-              // , 
-              <&macro_tap &kp BSLH >
-              , <&macro_tap &kp L >
-              , <&macro_tap &kp L >
+                <&macro_tap &kp ESC>
+              , <&macro_tap &kp COLON>
+              , <&macro_tap &kp W>
+              , <&macro_tap &kp RET>
+              , <&macro_tap &kp SPACE>
+              , <&macro_tap &kp L>
+              , <&macro_tap &kp L>
               ;
       };
         
