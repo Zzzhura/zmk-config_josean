@@ -1,22 +1,32 @@
-# Personal ZMK layout
-Made with [Corne keyboard](https://github.com/foostan/crkbd) in mind, can work on any other 42+ key keyboard.
+# ZMK Layout for Corne
+This is the ZMK layout I use with a [Aurora Corne](https://splitkb.com/collections/keyboard-kits/products/aurora-corne). It is geared towards MacOS shortcuts, and it allows typesetting of certain accented Italian letters.
 
 
 ## Default layer
 ```
--------------------------------------     --------------------------------------
-| TAB |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  |  -  |
-| CTRL|  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  ;  |  '  |
-| SHFT|  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  /  | SHFT|
-                  | GUI | LWR | SPC |     | RET | RSE | BKSP|
+--------+-------+--------+--------+--------+--------+      +--------+--------+--------+--------+--------+--------+     
+   tab      q       w        e        r         t              y        u        i        o        p        bksp
+ctrl/esc    a       s        d        f         g              h        j        k        l       ; :       ' "
+  shift     z       x        c        v         b              n        m       , <      . >      / ?     shift/sv
+                            cmd     lay. ↓   opt/ent        hyp/spc   lay. ↑    opt
+                         +--------+--------+--------+      +--------+--------+--------+
 
-ctl - mod tap, hold ctrl tap esc
-spc - mod tap, hold hyper(shift + ctrl + alt + gui) tap spc
-tab - mod tap, hold alt tap tab
+ctrl/esc - mod tap: hold for ctrl, tap for esc
+alt/ent  - mod tap: hold for option, tap for enter
+hyp/spc  - mod tap: hold for hyper (ctrl+shift+opt+cmd), tap for space
+shft/sv  - tapdance: hold for shift, 2 taps for vim save (esc :wq), 3 taps for vimtex save and compile (esc :wq, space l l),
 ```
 
 ## Lower layer
 ```
+//---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
+//    \         !        @         #         $         %               ^         &         *         (         )         bksp
+//   f3         1        2         3         4         5               -         +         `         [         ]          |
+//  lshift      6        7         8         9         0               _         =         ~         {         }       rshift
+//                                cmd               lalt/enter       space      bksp     
+//                             +---------+---------+---------+    +---------+---------+---------+
+// In this layer f3 is repeated. It is also present, with all oter function keys, in the next layer, because f3 and Cmd+f3 are
+// associated to macos shortcuts to exposé and clear the destkop.
 -------------------------------------     --------------------------------------
 | TAB |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  |  `  |
 | CTRL|     |     |     |     |     |     |     |     |     |     |     |     |
@@ -26,6 +36,12 @@ tab - mod tap, hold alt tap tab
 
 ## Raise layer
 ```
+//---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
+//                                  è         é                                 ù         ì         ò       vol up     bksp
+//   f1        à         f2        f3        f4      f5               ←         ↓         ↑         →       vol dn     bt clear
+//             f6        f7        f8        f9      f10           play/pause  prev     next                vol mut    bt next 
+//                             
+//                             +---------+---------+---------+    +---------+---------+---------+
 -------------------------------------     -------------------------------------
 | TAB |     |     |     |     |     |     |  ⧉  |  ⧈  | PLAY| VDWN| VUP | LOCK|
 | CTRL|     |     |     |     |     |     |  ←  |  ↓  |  ↑  |  →  |  [  |  ]  |
