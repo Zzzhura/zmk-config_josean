@@ -12,27 +12,27 @@
 
 / {
 
-   keymap {
+  keymap {
 
-     compatible = "zmk,keymap";
+    compatible = "zmk,keymap";
 
-       default_layer {
-         bindings = <  
-           &kp TAB         &kp Q   &kp W   &kp E       &kp R   &kp T          &kp Y             &kp U   &kp I       &kp O     &kp P      &kp BSPC
-           &tp LCTRL ESC   &kp A   &kp S   &kp D       &kp F   &kp G          &kp H             &kp J   &kp K       &kp L     &kp SEMI   &kp SQT
-           &kp LSHFT       &kp Z   &kp X   &kp C       &kp V   &kp B          &kp N             &kp M   &kp COMMA   &kp DOT   &kp FSLH   &tdvsave
-                                           &kp LGUI    &mo 1   &tp LALT RET   &mt HYPER SPACE   &mo 2   &kp RALT
-         >;
-       };
+      default_layer {
+        bindings = <  
+          &kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T             &kp Y            &kp U  &kp I      &kp O    &kp P     &kp BSPC
+          &tp LCTRL ESC  &kp A  &kp S  &kp D     &kp F  &kp G             &kp H            &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+          &kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B             &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &tdvsave
+                                       &kp LGUI  &mo 1  &tp LALT RET      &mt HYPER SPACE  &mo 2  &kp RALT
+        >;
+      };
               
-                layer_below {
-                        bindings = <
-  &kp BSLH  &kp EXCL &kp AT    &kp HASH  &kp DLLR &kp PRCNT       &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-  &kp F3    &kp N1   &kp N2    &kp N3    &kp N4   &kp N5          &kp MINUS  &kp PLUS  &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
-  &kp LSHFT &kp N6   &kp N7    &kp N8    &kp N9   &kp N0          &kp UNDER  &kp EQUAL &kp TILDE       &kp LBRC &kp RBRC &kp RSHFT
-                               &kp LGUI  &trans   &tp LALT RET    &kp SPACE  &kp BSPC  &trans
-                        >;
-                };
+      layer_below {
+        bindings = <
+          &kp BSLH   &kp EXCL  &kp AT  &kp HASH  &kp DLLR &kp PRCNT         &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+          &kp F3     &kp N1    &kp N2  &kp N3    &kp N4   &kp N5            &kp MINUS  &kp PLUS   &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
+          &kp LSHFT  &kp N6    &kp N7  &kp N8    &kp N9   &kp N0            &kp UNDER  &kp EQUAL  &kp TILDE        &kp LBRC  &kp RBRC  &kp RSHFT
+                                       &kp LGUI  &trans   &tp LALT RET      &kp SPACE  &kp BSPC   &trans
+        >;
+      };
 
 //---------+---------+---------+---------+---------+---------+    +---------+---------+---------+---------+---------+---------+     
 //                                  è         é                                 ù         ì         ò       vol up     bksp
