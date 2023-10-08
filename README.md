@@ -38,6 +38,7 @@ mscntrl - macos mission control to view windows; cmd+mscntrl shows the desktop. 
           f6        f7       f8       f9       f10         play/pause  prev     next             vol mut    bt next 
                             cmd              opt/ent          space              hyper
                          +--------+--------+--------+      +--------+--------+--------+
+
 delete                    - deletes character to the right (compare with backspace that deletes to the left)
 à, è, é, ì, ò, ù          - selected italian letters letters; they are positioned where the corresponding vowels 
                             are in the default layer (except for the repeated e)
