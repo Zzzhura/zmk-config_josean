@@ -1,6 +1,7 @@
 # ZMK Layout for Corne
 This is the ZMK layout I use with a [Aurora Corne](https://splitkb.com/collections/keyboard-kits/products/aurora-corne). It is geared towards MacOS shortcuts, and it allows typesetting of certain accented Italian letters.
 
+![corne image](https://github.com/danieleavitabile/zmk-config/main/corne-small-2.png?raw=true) 
 
 ## Default layer
 ```
