@@ -30,7 +30,7 @@
       COMBO(rbrc, &kp RBRC, 32 33, 0, 20, 50)
         
       // Backslash
-      COMBO(backslash, &kp RBRC, 0 1, 0, 20, 50)
+      COMBO(backslash, &kp BSLH, 0 1, 0, 20, 50)
 
     };
 };
