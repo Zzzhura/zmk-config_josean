@@ -1,0 +1,32 @@
+// key positions
+    /* --------------------------------------------------------------------------------
+    *  |  0  |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  10 |  11 |
+    *  |  12 |  13 |  14 |  15 |  16 |  17 |     |  18 |  19 |  20 |  21 |  22 |  23 |
+    *  |  24 |  25 |  26 |  27 |  28 |  29 |     |  30 |  31 |  32 |  33 |  34 |  35 |
+    *                    |  36 |  37 |  38 |     |  39 |  40 |  41 |
+    */
+    
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP, ...) \
+    combo_##NAME { \
+        timeout-ms = <TERM>; \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+        require-prior-idle-ms = <QUICKTAP>; \
+		__VA_ARGS__ \
+    };
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+      // Various types of brackets 
+      COMBO(lpar, &kp LPAR,  2  3, 0, 80, 50)
+      COMBO(lbkt, &kp LBKT, 14 15, 0, 80, 50)
+      COMBO(lbrc, &kp LBRC, 26 27, 0, 80, 50)
+      COMBO(rpar, &kp RPAR,  8  9, 0, 80, 50)
+      COMBO(rbkt, &kp RBKT, 20 21, 0, 80, 50)
+      COMBO(rbrc, &kp RBRC, 32 33, 0, 80, 50)
+
+    };
+};
