@@ -26,5 +26,10 @@
       };
 
     };
+
+    // Quickly send a tap in mod-tap 
+    &mt {
+      tapping-term-ms = <20>;
+    };
         
 };
