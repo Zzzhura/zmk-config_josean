@@ -1,6 +1,7 @@
 #define HYPER LC(LS(LA(LGUI)))
   
 / {
+
     behaviors {
 
       tp: tap_preferred {
@@ -125,4 +126,5 @@
       };
         
   };
+
 };
