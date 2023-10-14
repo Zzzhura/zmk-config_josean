@@ -1,31 +1,8 @@
-#define HYPER LC(LS(LA(LGUI)))
-  
 / {
-
-    behaviors {
-
-      tp: tap_preferred {
-        compatible = "zmk,behavior-hold-tap";
-        label = "TAP_PREFERRED";
-        #binding-cells = <2>;
-        tapping-term-ms = <150>;
-        quick-tap-ms = <0>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-      }; 
-      
-      tdvsave: tap_dance_vim_save {
-           compatible = "zmk,behavior-tap-dance";
-           label = "TAP_DANCE_VIM_SAVE";
-           #binding-cells = <0>;
-           tapping-term-ms = <200>;
-           bindings = <&kp RSHIFT>, <&vsave>, <&vtcompile>;
-      };
-
-    };
 
     macros {
         
+      // Character à
       a_gr: a_gr {
           label = "a_gr";
           compatible = "zmk,behavior-macro";
@@ -38,6 +15,7 @@
               ;
       };
         
+      // Character è
       e_gr: e_gr {
           label = "e_gr";
           compatible = "zmk,behavior-macro";
@@ -50,6 +28,7 @@
               ;
       };
         
+      // Character ì
       i_gr: i_gr {
           label = "i_gr";
           compatible = "zmk,behavior-macro";
@@ -62,6 +41,7 @@
               ;
       };
         
+      // Character ò
       o_gr: o_gr {
           label = "o_gr";
           compatible = "zmk,behavior-macro";
@@ -74,6 +54,7 @@
               ;
       };
         
+      // Character ù
       u_gr: u_gr {
           label = "u_gr";
           compatible = "zmk,behavior-macro";
@@ -86,6 +67,7 @@
               ;
       };
 
+      // Character é 
       e_ac: e_ac {
           label = "e_ac";
           compatible = "zmk,behavior-macro";
@@ -98,6 +80,7 @@
               ;
       };
         
+      // Key sequence for saving in vim: Esc :w Enter
       vsave: vim_save {
           label = "vim_save";
           compatible = "zmk,behavior-macro";
@@ -110,6 +93,7 @@
               ;
       };
 
+      // Key sequence for saving and compilin in vimtex: Esc :w Enter Space l l
       vtcompile: vim_tex_compile {
           label = "vim_tex_compile";
           compatible = "zmk,behavior-macro";

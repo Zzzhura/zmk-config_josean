@@ -1,0 +1,30 @@
+  
+/ {
+
+    behaviors {
+
+      // Implements tap preferred behaviour in mod tap
+      tp: tap_preferred {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TAP_PREFERRED";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+      }; 
+      
+      // Tap once for shift, 
+      // Tap twice for saving in vim: Esc :w Enter
+      // Tap three time three times for saving and compiling in vimtex: Esc :wq Space l l 
+      tdvsave: tap_dance_vim_save {
+           compatible = "zmk,behavior-tap-dance";
+           label = "TAP_DANCE_VIM_SAVE";
+           #binding-cells = <0>;
+           tapping-term-ms = <200>;
+           bindings = <&kp RSHIFT>, <&vsave>, <&vtcompile>;
+      };
+
+    };
+        
+};
