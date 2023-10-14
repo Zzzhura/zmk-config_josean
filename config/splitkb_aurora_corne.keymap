@@ -13,7 +13,7 @@
 
 // Quickly send a tap in mod-tap 
 &mt {
-  tapping-term-ms = <20>;
+  tapping-term-ms = <100>;
 };
 
 / {
