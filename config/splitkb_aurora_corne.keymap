@@ -11,6 +11,11 @@
 // Shortcuts
 #define HYPER LC(LS(LA(LGUI)))
 
+// Quickly send a tap in mod-tap 
+&mt {
+  tapping-term-ms = <20>;
+};
+
 / {
 
   keymap {
