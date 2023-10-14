@@ -2,6 +2,8 @@
 The ZMK layout I use with an [Aurora Corne](https://splitkb.com/collections/keyboard-kits/products/aurora-corne). It is geared towards MacOS, and it allows typesetting of certain accented Italian letters.
 
 This mapping is a customization of [Josean Martinez's](https://github.com/josean-dev/zmk-config/blob/master/config/corne.keymap) corne mapping. I am grateful to [Cem Aksoylar](https://github.com/caksoylar/zmk-config/tree/stock) for his help in setting up the combos. 
+
+
 ![corne image](https://github.com/danieleavitabile/zmk-config/blob/main/images/corne-small-2.png?raw=true) 
 ![keymap_image](https://github.com/danieleavitabile/zmk-config/blob/main/images/keymap-generatr.svg?raw=true)
 
