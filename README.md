@@ -3,9 +3,8 @@ The ZMK layout I use with an [Aurora Corne](https://splitkb.com/collections/keyb
 
 This mapping is a customization of [Josean Martinez's](https://github.com/josean-dev/zmk-config/blob/master/config/corne.keymap) corne mapping. I am grateful to [Cem Aksoylar](https://github.com/caksoylar/zmk-config/tree/stock) from whom I have taken the combos macros.
 
-
 ![corne image](https://github.com/danieleavitabile/zmk-config/blob/main/images/corne-small-2.png?raw=true) 
-![keymap_image](https://github.com/danieleavitabile/zmk-config/blob/main/images/keymap-generatr.svg?raw=true)
+![keymap_image](https://github.com/danieleavitabile/zmk-config/blob/main/images/keymap-generator.svg?raw=true)
 
 ## Default layer
 ```
@@ -38,7 +37,7 @@ mscntrl - macos mission control to view windows; cmd+mscntrl shows the desktop. 
 ## Upper layer
 ```
 --------+-------+--------+--------+--------+--------+      +--------+--------+--------+--------+--------+--------+     
-                             è        é                                 ù        ì         ò     vol up     delete
+         bright-  bright+    è        é                                 ù        ì         ò     vol up     delete
    f1       à       f2       f3       f4       f5               ←       ↓        ↑         →     vol dn     bt clear
           f6        f7       f8       f9       f10         play/pause  prev     next             vol mut    bt next 
                             cmd              opt/ent          space              hyper

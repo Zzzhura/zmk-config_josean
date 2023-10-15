@@ -1,0 +1,153 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  default:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - {t: ESC, h: CTRL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - SHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - 'SHIFT/SAVE'
+  - CMD
+  - LOWER
+  - {t: RET, h: LALT}
+  - SPACE
+  - UPPER
+  - {t: RET, h: HYPER}
+  lower:
+  - \
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - F3
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '-'
+  - +
+  - '`'
+  - '['
+  - ']'
+  - '|'
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - _
+  - '='
+  - '~'
+  - '{'
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  upper:
+  - ''
+  - BRI DN
+  - BRI UP
+  - 'è'
+  - 'é'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - 'ù'
+  - 'ì'
+  - 'ò'
+  - VOL UP
+  - DELETE
+  - F1
+  - 'à'
+  - F2
+  - F3
+  - F4
+  - F5
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - VOL DN
+  - BT CLR
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - PP
+  - PREV
+  - NEXT
+  - {t: ▽, type: trans}
+  - MUTE
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+combos:
+- p: [2, 3]
+  k: (
+  l: [default, lower]
+- p: [14, 15]
+  k: '['
+  l: [default, lower]
+- p: [26, 27]
+  k: '{'
+  l: [default, lower]
+- p: [8, 9]
+  k: )
+  l: [default, lower]
+- p: [20, 21]
+  k: ']'
+  l: [default, lower]
+- p: [32, 33]
+  k: '}'
+  l: [default, lower]
+- p: [0, 1]
+  k: \
+  l: [default, lower]
