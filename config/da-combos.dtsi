@@ -22,15 +22,15 @@
     compatible = "zmk,combos";
 
       // Various types of brackets 
-      COMBO(lpar, &kp LPAR,  2  3, 0, 20, 50)
-      COMBO(lbkt, &kp LBKT, 14 15, 0, 20, 50)
-      COMBO(lbrc, &kp LBRC, 26 27, 0, 20, 50)
-      COMBO(rpar, &kp RPAR,  8  9, 0, 20, 50)
-      COMBO(rbkt, &kp RBKT, 20 21, 0, 20, 50)
-      COMBO(rbrc, &kp RBRC, 32 33, 0, 20, 50)
+      COMBO(lpar, &kp LPAR,  2  3, 0 1, 20, 50)
+      COMBO(lbkt, &kp LBKT, 14 15, 0 1, 20, 50)
+      COMBO(lbrc, &kp LBRC, 26 27, 0 1, 20, 50)
+      COMBO(rpar, &kp RPAR,  8  9, 0 1, 20, 50)
+      COMBO(rbkt, &kp RBKT, 20 21, 0 1, 20, 50)
+      COMBO(rbrc, &kp RBRC, 32 33, 0 1, 20, 50)
         
       // Backslash
-      COMBO(backslash, &kp RBRC, 0 1, 0, 20, 50)
+      COMBO(backslash, &kp BSLH, 0 1, 0 1, 20, 50)
 
     };
 };
