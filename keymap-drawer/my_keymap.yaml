@@ -136,7 +136,7 @@ combos:
 - p: [15, 16]
   k: '['
   l: [default, lower]
-- p: [27, 26]
+- p: [27, 28]
   k: '{'
   l: [default, lower]
 - p: [7, 8]
