@@ -3,7 +3,7 @@ The ZMK layout I use with an [Aurora Corne](https://splitkb.com/collections/keyb
 
 This mapping is a customization of [Josean Martinez's](https://github.com/josean-dev/zmk-config/blob/master/config/corne.keymap) corne mapping. I am grateful to [Cem Aksoylar](https://github.com/caksoylar/zmk-config/tree/stock) from whom I have taken the combos macros.
 
-The keyboard layouts are generated with [keynap-drawer](https://github.com/caksoylar/keymap-drawer).
+The keyboard layouts are generated with [keynap-drawer](https://github.com/caksoylar/keymap-drawer) ([web application](https://keymap-drawer.streamlit.app)).
 
 ![corne image](https://github.com/danieleavitabile/zmk-config/blob/main/images/corne-small-2.png?raw=true) 
 ![keymap_image](https://github.com/danieleavitabile/zmk-config/blob/main/images/keymap-generatr.svg?raw=true)
