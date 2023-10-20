@@ -130,22 +130,22 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
 combos:
-- p: [3, 4]
+- p: [2, 3]
   k: (
   l: [default, lower]
-- p: [15, 16]
+- p: [14, 15]
   k: '['
   l: [default, lower]
-- p: [27, 28]
+- p: [26, 27]
   k: '{'
   l: [default, lower]
-- p: [7, 8]
+- p: [8, 9]
   k: )
   l: [default, lower]
-- p: [19, 20]
+- p: [20, 21]
   k: ']'
   l: [default, lower]
-- p: [31, 32]
+- p: [32, 33]
   k: '}'
   l: [default, lower]
 - p: [0, 1]
