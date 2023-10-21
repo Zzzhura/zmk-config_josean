@@ -15,14 +15,14 @@
       }; 
       
       // Tap once for shift, 
-      // Tap twice for saving in vim: Esc :w Enter
-      // Tap three time three times for saving and compiling in vimtex: Esc :wq Space l l 
+      // Tap twice for saving and compiling in vimtex: Esc :wq Space l l 
+      // Tap three times for saving in vim: Esc :w Enter
       tdvsave: tap_dance_vim_save {
            compatible = "zmk,behavior-tap-dance";
            label = "TAP_DANCE_VIM_SAVE";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp RSHIFT>, <&vsave>, <&vtcompile>;
+           bindings = <&kp RSHIFT>, <&vtcompile>, <&vsave>;
       };
 
     };
