@@ -1,2 +1,3 @@
-// Personal includes
-#include "da-keymap.dtsi"
+// Generic corne keymap
+#include "corne-keymap.dtsi"
+
