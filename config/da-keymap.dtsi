@@ -1,0 +1,50 @@
+// ZMK includes
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+// Personal includes
+#include "da-combos.dtsi"
+#include "da-macros.dtsi"
+#include "da-behaviors.dtsi"
+
+// Shortcuts
+#define HYPER LC(LS(LA(LGUI)))
+
+
+/ {
+  
+  keymap {
+
+    compatible = "zmk,keymap";
+
+      default_layer {
+        bindings = <  
+          &kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T             &kp Y            &kp U  &kp I      &kp O    &kp P     &kp BSPC
+          &tp LCTRL ESC  &kp A  &kp S  &kp D     &kp F  &kp G             &kp H            &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+          &kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B             &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &tdvsave
+                                       &kp LGUI  &mo 1  &tp LALT RET      &kp SPACE        &mo 2  &tp HYPER RET
+        >;
+      };
+              
+      lower_layer {
+        bindings = <
+          &kp BSLH   &kp EXCL  &kp AT  &kp HASH  &kp DLLR &kp PRCNT         &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+          &kp F3     &kp N1    &kp N2  &kp N3    &kp N4   &kp N5            &kp MINUS  &kp PLUS   &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
+          &trans     &kp N6    &kp N7  &kp N8    &kp N9   &kp N0            &kp UNDER  &kp EQUAL  &kp TILDE        &kp LBRC  &kp RBRC  &trans
+                                       &trans    &none    &trans            &trans     &none      &trans
+        >;
+      };
+
+      upper_layer {
+        bindings = <
+          &none        &kp C_BRI_DN  &kp C_BRI_UP    &e_gr   &e_ac   &trans       &trans    &u_gr       &i_gr       &o_gr      &kp C_VOL_UP  &kp DELETE
+          &kp F1       &a_gr         &kp F2          &kp F3  &kp F4  &kp F5       &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT  &kp C_VOL_DN  &bt BT_CLR
+          &trans       &kp F6        &kp F7          &kp F8  &kp F9  &kp F10      &kp C_PP  &kp C_PREV  &kp C_NEXT  &trans     &kp C_MUTE    &bt BT_NXT
+                                                     &trans  &trans  &trans       &trans    &trans      &trans
+        >;
+      };
+                    
+  };
+
+};
