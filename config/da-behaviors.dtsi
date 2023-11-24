@@ -24,6 +24,16 @@
            tapping-term-ms = <200>;
            bindings = <&kp RSHIFT>, <&vtcompile>, <&vsave>;
       };
+      
+      // Hold for shift, 
+      // Tap twice for triggering vim completion
+      tdshiftvcomp: tap_dance_lshift_vim_complete {
+           compatible = "zmk,behavior-tap-dance";
+           label = "TAP_DANCE_LSHIFT_VIM_COMPLETE";
+           #binding-cells = <0>;
+           tapping-term-ms = <200>;
+           bindings = <&kp LGUI>, <&vcomplete>;
+      };
 
     };
 
