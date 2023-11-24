@@ -14,7 +14,7 @@
         bindings = <&kp>, <&kp>;
       }; 
       
-      // Tap once for shift, 
+      // Hold for shift, 
       // Tap twice for saving and compiling in vimtex: Esc :wq Space l l 
       // Tap three times for saving in vim: Esc :w Enter
       tdvsave: tap_dance_vim_save {
@@ -24,17 +24,17 @@
            tapping-term-ms = <200>;
            bindings = <&kp RSHIFT>, <&vtcompile>, <&vsave>;
       };
-      
+        
       // Hold for shift, 
-      // Tap twice for triggering vim completion
-      tdshiftvcomp: tap_dance_lshift_vim_complete {
+      // Tap twice to trigger vim completion
+      tdvcomplete: tap_dance_vim_complete {
            compatible = "zmk,behavior-tap-dance";
-           label = "TAP_DANCE_LSHIFT_VIM_COMPLETE";
+           label = "TAP_DANCE_VIM_COMPLETE";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp LGUI>, <&vcomplete>;
+           bindings = <&kp LSHIFT>, <&vcomplete>;
       };
-
+      
     };
 
 };

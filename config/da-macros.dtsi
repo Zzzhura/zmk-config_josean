@@ -110,8 +110,8 @@
       };
         
       // Key sequence to trigger completion in vim
-      vcomlete: vim_complete {
-          label = "vim_ccomplete";
+      vcomplete: vim_complete {
+          label = "vim_complete";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           bindings
