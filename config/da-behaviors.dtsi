@@ -14,18 +14,27 @@
         bindings = <&kp>, <&kp>;
       }; 
       
-      // Hold for shift, 
-      // Tap twice for saving and compiling in vimtex: Esc :wq Space l l 
-      // Tap three times for saving in vim: Esc :w Enter
+      // Hold for right shift, 
+      // Tap twice times for saving in vim: Esc :w Enter
       tdvsave: tap_dance_vim_save {
            compatible = "zmk,behavior-tap-dance";
            label = "TAP_DANCE_VIM_SAVE";
            #binding-cells = <0>;
            tapping-term-ms = <200>;
-           bindings = <&kp RSHIFT>, <&vtcompile>, <&vsave>;
+           bindings = <&kp RSHIFT>, <&vsave>;
+      };
+
+      // Tap once for '
+      // Tap twice for saving and compiling in vimtex: Esc :wq Space l l 
+      tdvtcompile: tap_dance_vimtex_compile {
+           compatible = "zmk,behavior-tap-dance";
+           label = "TAP_DANCE_VIMTEX_COMPILE";
+           #binding-cells = <0>;
+           tapping-term-ms = <200>;
+           bindings = <&kp SQT>, <&vcompile>;
       };
         
-      // Hold for shift, 
+      // Hold for left shift, 
       // Tap twice to trigger vim completion
       tdvcomplete: tap_dance_vim_complete {
            compatible = "zmk,behavior-tap-dance";
