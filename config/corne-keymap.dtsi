@@ -13,6 +13,11 @@
 // Shortcuts
 #define HYPER LC(LS(LA(LGUI)))
 
+// Soft-off: only turn off it the key is held for 3 seconds or longer.
+&soft_off {
+    hold-time-ms = <3000>; 
+};
+
 / {
   
   keymap {
