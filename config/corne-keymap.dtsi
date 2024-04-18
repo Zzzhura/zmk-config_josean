@@ -8,7 +8,7 @@
 #include "da-combos.dtsi"
 #include "da-macros.dtsi"
 #include "da-behaviors.dtsi"
-// #include "da-soft-off.dtsi"
+#include "da-soft-off.dtsi"
 
 // Shortcuts
 #define HYPER LC(LS(LA(LGUI)))
