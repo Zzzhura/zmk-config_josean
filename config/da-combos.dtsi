@@ -33,7 +33,10 @@
       COMBO(backslash, &kp BSLH, 0 1, 0 1, 20, 50)
 
       // Caps lock
-      COMBO(shift2capslock, &kp CAPSLOCK, 24 35, 0, 20, 50)
+      // COMBO(shift2capslock, &kp CAPSLOCK, 24 35, 0, 20, 50)
+
+      // Caps workd
+      COMBO(shift2capsword, &caps_word, 24 35, 0, 20, 50)
 
     };
 };
