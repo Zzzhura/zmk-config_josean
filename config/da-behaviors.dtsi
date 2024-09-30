@@ -15,7 +15,7 @@
       }; 
       
       // Hold for right shift, 
-      // Tap twice times for saving in vim: Esc :w Enter
+      // Tap twice for saving in vim: Esc :w Enter
       tdvsave: tap_dance_vim_save {
            compatible = "zmk,behavior-tap-dance";
            label = "TAP_DANCE_VIM_SAVE";
