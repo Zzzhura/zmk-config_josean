@@ -52,7 +52,7 @@
           label = "hard_sign";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
-          bindings = <&macro_tap &u042A>;
+          bindings = <&macro_tap &kp &U_042A>;
       };
 
       // Character ò
