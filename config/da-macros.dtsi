@@ -1,7 +1,7 @@
 / {
 
     macros {
-        
+
       // Character à
       a_gr: a_gr {
           label = "a_gr";
@@ -14,7 +14,7 @@
               , <&macro_tap &kp A >
               ;
       };
-        
+
       // Character è
       e_gr: e_gr {
           label = "e_gr";
@@ -27,7 +27,7 @@
               , <&macro_tap &kp E >
               ;
       };
-        
+
       // Character ì
       i_gr: i_gr {
           label = "i_gr";
@@ -40,7 +40,7 @@
               , <&macro_tap &kp I >
               ;
       };
-        
+
       // Character ò
       o_gr: o_gr {
           label = "o_gr";
@@ -53,7 +53,26 @@
               , <&macro_tap &kp O >
               ;
       };
-        
+
+
+
+// х
+kh_ru: kh_ru {
+    label = "kh_ru";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap &u U0445>;
+};
+
+// ъ
+hard_sign_ru: hard_sign_ru {
+    label = "hard_sign_ru";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap &u U044A>;
+};
       // Character ù
       u_gr: u_gr {
           label = "u_gr";
@@ -67,7 +86,7 @@
               ;
       };
 
-      // Character é 
+      // Character é
       e_ac: e_ac {
           label = "e_ac";
           compatible = "zmk,behavior-macro";
@@ -79,7 +98,7 @@
               , <&macro_tap &kp E >
               ;
       };
-        
+
       // Key sequence for saving in vim: Esc :w Enter
       vsave: vim_save {
           label = "vim_save";
@@ -108,7 +127,7 @@
               , <&macro_tap &kp L>
               ;
       };
-        
+
       // Key sequence to trigger completion in vim
       vcomplete: vim_complete {
           label = "vim_complete";
@@ -123,7 +142,7 @@
               , <&macro_release &kp LCTRL>
               ;
       };
-        
+
   };
 
 };
