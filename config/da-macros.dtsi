@@ -41,6 +41,20 @@
               ;
       };
 
+          x_macro: x_macro {
+          label = "x_macro";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&macro_tap &kp X>;
+      };
+
+      ard_sign: hard_sign {
+          label = "hard_sign";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&macro_tap &u042A>;
+      };
+
       // Character ò
       o_gr: o_gr {
           label = "o_gr";
