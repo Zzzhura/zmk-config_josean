@@ -56,23 +56,27 @@
 
 
 
-// х
-kh_ru: kh_ru {
-    label = "kh_ru";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_tap &u U0445>;
-};
+      // х
+      kh_ru: kh_ru {
+          label = "kh_ru";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings =
+              <&macro_press &kp RALT>,
+              <&macro_tap &kp H>,
+              <&macro_release &kp RALT>;
+      };
 
-// ъ
-hard_sign_ru: hard_sign_ru {
-    label = "hard_sign_ru";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_tap &u U044A>;
-};
+      hard_sign_ru: hard_sign_ru {
+          label = "hard_sign_ru";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings =
+              <&macro_press &kp RALT>,
+              <&macro_tap &kp Q>,
+              <&macro_release &kp RALT>;
+      };
+
       // Character ù
       u_gr: u_gr {
           label = "u_gr";
