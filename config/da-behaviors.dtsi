@@ -3,6 +3,20 @@
 
     behaviors {
 
+       behaviors {
+    u_x_cyr: u_x_cyr {
+      compatible = "zmk,behavior-unicode";
+      label = "х";
+      unicode = <0x0445>;  // Unicode для кириллической х
+    };
+
+    u_hard_sign: u_hard_sign {
+      compatible = "zmk,behavior-unicode";
+      label = "ъ";
+      unicode = <0x044A>;  // Unicode для кириллической ъ
+    };
+  };
+
       // Implements tap preferred behaviour
       tp: tap_preferred {
         compatible = "zmk,behavior-hold-tap";
