@@ -48,13 +48,6 @@
           bindings = <&macro_tap &kp X>;
       };
 
-      ard_sign: hard_sign {
-          label = "hard_sign";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <&macro_tap &kp &U_042A>;
-      };
-
       // Character ò
       o_gr: o_gr {
           label = "o_gr";
@@ -88,6 +81,28 @@
           bindings =
               <&macro_press &kp RALT>,
               <&macro_tap &kp Q>,
+              <&macro_release &kp RALT>;
+      };
+
+      // х
+      x_ru: x_ru {
+          label = "x_ru";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings =
+              <&macro_press &kp RALT>,
+              <&macro_tap &kp X>,
+              <&macro_release &kp RALT>;
+      };
+
+      // ъ
+      hard_sign_ru_alt: hard_sign_ru_alt {
+          label = "hard_sign_ru_alt";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings =
+              <&macro_press &kp RALT>,
+              <&macro_tap &kp BSLH>,
               <&macro_release &kp RALT>;
       };
 
