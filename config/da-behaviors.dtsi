@@ -3,17 +3,19 @@
 
     behaviors {
 
-    u_x_cyr: u_x_cyr {
-      compatible = "zmk,behavior-unicode";
-      label = "х";
-      unicode = <0x0445>;  // Unicode для кириллической х
-    };
+      u_x_cyr: u_x_cyr {
+    compatible = "zmk,behavior-unicode";
+    label = "х";
+    unicode = <0x0445>;  // Unicode для кириллической х
+    #binding-cells = <0>;
+  };
 
-    u_hard_sign: u_hard_sign {
-      compatible = "zmk,behavior-unicode";
-      label = "ъ";
-      unicode = <0x044A>;  // Unicode для кириллической ъ
-    };
+  u_hard_sign: u_hard_sign {
+    compatible = "zmk,behavior-unicode";
+    label = "ъ";
+    unicode = <0x044A>;  // Unicode для кириллической ъ
+    #binding-cells = <0>;
+  };
 
       // Implements tap preferred behaviour
       tp: tap_preferred {
