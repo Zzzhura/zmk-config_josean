@@ -3,7 +3,6 @@
 
     behaviors {
 
-       behaviors {
     u_x_cyr: u_x_cyr {
       compatible = "zmk,behavior-unicode";
       label = "х";
@@ -15,7 +14,6 @@
       label = "ъ";
       unicode = <0x044A>;  // Unicode для кириллической ъ
     };
-  };
 
       // Implements tap preferred behaviour
       tp: tap_preferred {
