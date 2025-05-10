@@ -74,16 +74,6 @@
               <&macro_release &kp RALT>;
       };
 
-      hard_sign_ru: hard_sign_ru {
-          label = "hard_sign_ru";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings =
-              <&macro_press &kp RALT>,
-              <&macro_tap &kp Q>,
-              <&macro_release &kp RALT>;
-      };
-
       // х
       x_ru: x_ru {
           label = "x_ru";
@@ -96,6 +86,17 @@
       };
 
       // ъ
+      hard_sign_ru: hard_sign_ru {
+          label = "hard_sign_ru";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings =
+              <&macro_press &kp RALT>,
+              <&macro_tap &kp Q>,
+              <&macro_release &kp RALT>;
+      };
+
+      // ъ (альтернативный вариант)
       hard_sign_ru_alt: hard_sign_ru_alt {
           label = "hard_sign_ru_alt";
           compatible = "zmk,behavior-macro";
