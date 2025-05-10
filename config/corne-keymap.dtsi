@@ -43,7 +43,7 @@
 
         upper_layer {
         bindings = <
-          &none        &kp C_BRI_DN  &kp C_BRI_UP    &e_gr   &e_ac   &soft_off    &soft_off   &u_gr       &kp LT       &kp GT       &kp C_VOL_UP  &kp DELETE
+          &kp FN
           &kp F1       &a_gr         &kp F2          &kp F3  &kp F4  &kp F5       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &kp C_VOL_DN  &bt BT_CLR
           &trans       &kp F6        &kp F7          &kp F8  &kp F9  &kp F10      &kp C_PP    &kp C_PREV  &kp C_NEXT  &trans     &kp C_MUTE    &bt BT_NXT
                                                      &trans  &trans  &trans       &trans      &trans      &trans
